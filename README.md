@@ -4,7 +4,7 @@ Description: This script converts bedGraph to fixedStep wig format with defined 
 
 Coordinates in bedGraph input are assumed to be 0-based (http://genome.ucsc.edu/goldenPath/help/bedgraph.html).
 
-Coordinates in wig output are 1-based (http://genome.ucsc.edu/goldenPath/help/wiggle.html). 
+Coordinates in wig output are 1-based (http://genome.ucsc.edu/goldenPath/help/wiggle.html). This wig file is consistent with HMMCopy readCounter output, thus it can be used directly in ichorCNA for ctDNA fraction estimation.
 
 ## Usage: 
     bedgraph_to_wig.pl --bedgraph input.bedgraph --wig output.wig --step step_size [--compact]
